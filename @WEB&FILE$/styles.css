@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+}
+.keym{
+    position: absolute;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 100px;
+    margin-left: 380px;
+    font-size: 70px;
+    cursor: pointer;
+    justify-content: space-between;    
+}
+.keym:hover{
+    transition-duration: 1s;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+.keym:active{
+    border: 2px solid #04aa6d;
+}
+.bars{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 5rem;
+    width: 5rem;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 900px;
+}
+.bars .bar{
+    height: 10px;
+    background: white;
+    margin: 6px 0px;
+    transform-origin: left;
+    transition: all 0.5s;
+}
+.bars:hover .up{
+    transform: rotate(45deg);
+}
+.bars:hover .mid{
+    opacity: 0;
+}
+.bars:hover .down{
+    transform: rotate(-45deg);
+}
